@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account </title>
+    <link rel="stylesheet" href="air conditioner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+   
+      <div class="header-2">
+        <div>
+            
+            <div class="navbar">
+
+                
+                <div class="logo">
+                    <a href="index.html"><img src="/air conditioner. images/ac-split-svg-png-icon-download-19.png" alt="logo" width="105px"></a> 
+                     <h3>Electro Voice</h3>
+                 </div>
+
+                <nav class="nav-links" id="navlinks">
+                    <div>
+                    <i class="fa fa-times hide" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="About us.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account .html">Account</a></li>
+                    </ul>
+
+                </nav>
+
+                <a href="shoping cart.html"><img src="/air conditioner. images/cart.png" alt="cart-logo" width="30px" height="30px" class="cart-logo"></a>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </div>
+
+        </div>
+    </div>
+
+     <!-- -------- account page--------->
+
+     <div class="account-page">
+      <div class="container">
+        <h2 class="title">Register Now And Get 10% Discount❤️!!</h2>
+        <div class="row">
+       <div class="col-2">
+         <video autoplay muted loop src="App videos/Air Conditioner 3D Animation Advertising Video _ Ac Product 3D Model and Animation Video Ad (1).mp4"></video>
+       </div>
+
+       <div class="col-2">
+       <div class="form-container">
+        
+        <div class="form-btn">
+              <span onclick="login()">Login</span>
+              <span onclick="register()">Register</span>
+              <hr id="Indicator">
+    
+        </div>
+
+        <form id="LoginForm">
+     <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit" class="btn">Login</button>
+    <a href="#">Forgot Password?</a>
+
+        </form>
+
+        <form id="RegForm">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+           <input type="password" placeholder="Password">
+           <button class="btn" onclick="openpopup()">Register</button>
+
+           
+       
+               </form>
+       
+
+ 
+       </div>
+       
+
+
+      </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="pop-up" id="popup">
+        <img src="/air conditioner. images/404-tick.png" alt="Tick-Mark">
+        <h2>THANK YOU!</h2>
+        <p>Your details Has Been Successfully submitted. Thanks!</p>
+        <span>Congratulations 🎉🎉 !! You Get 10% Discount </span>
+        <button type="button" onclick="closepopup()">OK</button>
+        </div>
+
+     </div>
+
+  
+
+
+ 
+
+
+
+
+
+<!-- ----footer------ -->
+
+<section class="footer">
+    <div class="container">
+    <div class="row">
+   
+        <div class="footer-col-1">
+       <h3>Download Our App </h3>
+       <p>Download App for Android and ios mobile phone.</p>
+       <div class="app-logo">
+        <img src="/air conditioner. images/play-store.png" alt="">
+        <img src="/air conditioner. images/app-store.png" alt="">
+
+       </div>
+        </div>
+
+        <div class="footer-col-2">
+            <img src="/air conditioner. images/logo.png" alt="">
+            <p>world Wide Air conditioner shop. </p>
+             </div>
+
+             <div class="footer-col-3">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                <p></p>
+                 </div>
+                 
+                      <section class="social">
+                      <h2>Follow Us On Social Media</h2>
+                 <div class="row">
+                    
+                    <div class="col-5">
+                       
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook social-icons"></i> </a>
+                    </div>
+                
+                    
+                    <div class="col-5">
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter social-icons"></i> </a>
+                    </div>
+                
+                    
+                    <div class="col-5">
+                        <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp social-icons"></i> </a>
+                    </div>
+                
+                    
+                    <div class="col-5">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram social-icons"></i> </a>
+                    </div>
+                
+                    
+                    <div class="col-5">
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube social-icons"></i> </a>
+                    </div>
+                
+                  </div>
+                  <hr>
+                  <p>Copyright 2023 - Noman khan - syed Kaif - Hassan Ali </p>
+                </section>
+    </div>
+
+    </div>
+
+</section>
+
+  
+<script>
+var navlinks = document.getElementById('navlinks');
+        function showmenu() {
+            navlinks.style.right = '0';
+        }
+        function hidemenu() {
+            navlinks.style.right = '-200px';
+        }
+
+</script>
+
+  <!-- -----js for toggle form------- -->
+<script>
+  var LoginForm = document.getElementById("LoginForm");
+  var RegForm = document.getElementById("RegForm");
+  var Indicator = document.getElementById("Indicator");
+
+  function register(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(60px)";
+  }
+
+  
+  function login(){
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(-50px)";
+  }
+ 
+</script>
+
+<script>
+    let popup = document.getElementById("popup")
+
+    function openpopup(){
+        popup.classList.add("open-popup");
+        
+    }
+
+    function closepopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+
+
+</body>
+
+</html>
